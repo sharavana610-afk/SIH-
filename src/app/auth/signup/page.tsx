@@ -1,4 +1,5 @@
 "use client";
+//greenspark/src/app/auth/signup/page.tsx
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "../../../components/Navbar";
@@ -41,33 +42,53 @@ export default function SignUpPage() {
   };
 
   const submit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!validateForm()) return;
+  e.preventDefault();
 
-    setIsLoading(true);
-    
-    try {
-      // Simulate API call delay
-      await new Promise(resolve => setTimeout(resolve, 800));
-      
-      saveUser({
-        name,
-        email,
-        stage,
-        schoolLevel: level,
-        collegeCourse: course,
-        xp: 1200,
-        badges: ["Eco Beginner", "Tree Planter"],
-      });
+  if (!validateForm()) return;
+  setIsLoading(true);
 
-      router.push("/survey");
-    } catch (error) {
-      console.error("Signup failed:", error);
-    } finally {
+  try {
+    // 1. Check if user already exists
+    const checkRes = await fetch(`/api/users?email=${email}`);
+    const checkData = await checkRes.json();
+    if (checkData.exists) {
+      setErrors({ email: "Email already registered" });
       setIsLoading(false);
+      return;
     }
-  };
+
+    // 2. Create new user
+    const res = await fetch("/api/users", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, password }),
+    });
+
+    if (!res.ok) {
+      const err = await res.json();
+      setErrors({ email: err.error || "Signup failed" });
+      return;
+    }
+
+    // Save locally (simulate DB login)
+    saveUser({
+      name,
+      email,
+      stage,
+      schoolLevel: level,
+      collegeCourse: course,
+      xp: 1200,
+      badges: ["Eco Beginner", "Tree Planter"],
+    });
+
+    router.push("/survey");
+  } catch (error) {
+    console.error("Signup failed:", error);
+  } finally {
+    setIsLoading(false);
+  }
+};
+
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-slate-50">
@@ -83,7 +104,7 @@ export default function SignUpPage() {
               </svg>
             </div>
             <h1 className="text-4xl font-bold text-slate-900 mb-3">
-              Join Our Community
+              Welcome to GreenSpark!
             </h1>
             <p className="text-lg text-slate-600 max-w-md mx-auto">
               Create your account and start your educational journey with us
