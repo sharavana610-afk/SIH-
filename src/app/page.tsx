@@ -19,13 +19,14 @@ export default function Landing() {
                 Revolutionizing Environmental Education
               </div>
               
-              <h1 className="text-5xl lg:text-7xl font-black tracking-tight leading-tight">
-                Learn Green,<br />
-                Play Bold —<br />
-                <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                  GreenSpark
-                </span>
+             <h1 className="text-5xl lg:text-7xl font-black tracking-tight leading-tight">
+                <span className="block text-black">Learn Green,</span>
+                <span className="block text-black">Play Bold —</span>
+                <span className="block bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+                 GreenSpark
+                   </span>
               </h1>
+
               
               <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
                 Interactive environmental learning platform combining <strong>comics, games, and real-world activities</strong> for Indian school students across all levels.
