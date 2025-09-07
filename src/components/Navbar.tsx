@@ -30,6 +30,15 @@ export default function Navbar() {
           <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-600 transition-all duration-300 group-hover:w-full"></span>
         </Link>
 
+        {/* Teacher Dashboard Link */}
+        <Link 
+          href="/teacher-dashboard" 
+          className="relative text-sm font-medium text-gray-700 hover:text-emerald-700 transition-colors duration-300 group"
+        >
+          Teacher Portal
+          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-600 transition-all duration-300 group-hover:w-full"></span>
+        </Link>
+
         {/* Auth Buttons Container */}
         <div className="flex items-center gap-3">
           {/* Sign In Button */}
