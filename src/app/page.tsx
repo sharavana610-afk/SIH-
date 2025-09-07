@@ -150,14 +150,14 @@ export default function Landing() {
                   <CheckCircle className="w-5 h-5 text-yellow-500 mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-slate-800">Games</h4>
-                    <p className="text-sm text-slate-600">Waste sorting, virtual tree-planting, "Eco Run"</p>
+                    <p className="text-sm text-slate-600">Waste sorting, virtual tree-planting, &quot;Eco Run&quot;</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-yellow-500 mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-slate-800">Activities</h4>
-                    <p className="text-sm text-slate-600">Craft from waste, "Adopt a Plant" projects</p>
+                    <p className="text-sm text-slate-600">Craft from waste, &quot;Adopt a Plant&quot; projects</p>
                   </div>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function Landing() {
                   <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-slate-800">Comics</h4>
-                    <p className="text-sm text-slate-600">"Carbon Detective", "Water Warriors"</p>
+                    <p className="text-sm text-slate-600">&quot;Carbon Detective&quot;, &quot;Water Warriors&quot;</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -221,14 +221,14 @@ export default function Landing() {
                   <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-slate-800">Comics</h4>
-                    <p className="text-sm text-slate-600">"The Last Forest", "Climate 2050"</p>
+                    <p className="text-sm text-slate-600">&quot;The Last Forest&quot;, &quot;Climate 2050&quot;</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-slate-800">Games</h4>
-                    <p className="text-sm text-slate-600">"Survival Earth", energy simulations</p>
+                    <p className="text-sm text-slate-600">&quot;Survival Earth&quot;, energy simulations</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -270,7 +270,7 @@ export default function Landing() {
                 <Users className="w-6 h-6 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">School Competitions</h3>
-              <p className="text-slate-600 text-sm">"Green School of the Year" recognition and inter-school challenges.</p>
+              <p className="text-slate-600 text-sm">&quot;Green School of the Year&quot; recognition and inter-school challenges.</p>
             </div>
             
             <div className="bg-white rounded-2xl p-6 border border-purple-100 hover:shadow-lg transition-all duration-300 hover:border-purple-200">
@@ -335,7 +335,7 @@ export default function Landing() {
             Ready to Spark the <span className="text-emerald-600">Green Revolution?</span>
           </h2>
           <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-            Join thousands of students already learning, playing, and making a difference with GreenSpark's interactive environmental education platform.
+            Join thousands of students already learning, playing, and making a difference with GreenSpark&apos;s interactive environmental education platform.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
