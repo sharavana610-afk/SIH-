@@ -84,7 +84,7 @@ export default function SignInPage() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
+                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:ring-2 text-slate-900 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 placeholder-slate-400"
                     style={{ 
                       backgroundColor: '#FFFFFF',
                       borderColor: '#CBD5E1'
@@ -114,7 +114,7 @@ export default function SignInPage() {
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="w-full pl-10 pr-12 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
+                    className="w-full pl-10 pr-12 py-3 rounded-xl border text-slate-900  border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200  placeholder-slate-400"
                     style={{ 
                       backgroundColor: '#FFFFFF',
                       borderColor: '#CBD5E1'
