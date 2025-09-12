@@ -1,3 +1,9 @@
+// src/lib/storage.ts
+
+// 🔹 Define missing types
+export type EducationStage = "school" | "college" | "other";
+export type SchoolLevel = "primary" | "secondary" | "higher";
+
 export type UserProfile = {
   name: string;
   email: string;
@@ -18,11 +24,10 @@ export function saveUser(profile: UserProfile) {
 export function getUser(): UserProfile | null {
   if (typeof window === "undefined") return null;
   const raw = localStorage.getItem(KEY);
-  return raw ? JSON.parse(raw) : null;
+  return raw ? (JSON.parse(raw) as UserProfile) : null;
 }
 
 export function clearUser() {
   if (typeof window === "undefined") return;
   localStorage.removeItem(KEY);
 }
-
