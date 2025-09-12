@@ -170,7 +170,7 @@ export default function Landing() {
                   <Globe className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-slate-800">Secondary</h3>
+                  <h3 className="text-2xl font-bold text-slate-800">Middle School</h3>
                   <p className="text-blue-600 font-medium">Classes 6-10</p>
                 </div>
               </div>
