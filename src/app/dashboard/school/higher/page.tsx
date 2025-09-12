@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import ProfileCard from "@/components/ProfileCard";
 import BadgeCard from "@/components/BadgeCard";
-import ModuleCard from "@/components/ModuleCard";
+import LearningModulesComponent from "@/components/LearningModule";
 import { getUser } from "@/lib/storage";
 
 export default function HigherDashboard() {
@@ -22,21 +22,7 @@ export default function HigherDashboard() {
       <section className="space-y-4">
         <h2 className="text-xl font-bold">Your Learning Modules</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ModuleCard
-            type="comic"
-            title="The Last Forest"
-            desc="Explore biodiversity and human impact."
-          />
-          <ModuleCard
-            type="game"
-            title="Climate Crisis Simulator"
-            desc="Make decisions as a policymaker in 2050."
-          />
-          <ModuleCard
-            type="quiz"
-            title="Energy Choices Quiz"
-            desc="Test your knowledge on renewable energy."
-          />
+          <LearningModulesComponent />  
         </div>
       </section>
     </main>

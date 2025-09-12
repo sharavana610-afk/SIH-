@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 
+//src/components/ModuleCard.tsx
+
 // ✅ Define the structure of a learning module
 interface LearningModule {
   id: string;

@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import ProfileCard from "@/components/ProfileCard";
 import BadgeCard from "@/components/BadgeCard";
-import ModuleCard from "@/components/ModuleCard";
+import LearningModulesComponent from "@/components/LearningModule";
 import { getUser } from "@/lib/storage";
 
 export default function SecondaryDashboard() {
@@ -22,21 +22,7 @@ export default function SecondaryDashboard() {
       <section className="space-y-4">
         <h2 className="text-xl font-bold">Your Learning Modules</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ModuleCard
-            type="comic"
-            title="Carbon Detective"
-            desc="Uncover hidden pollution sources."
-          />
-          <ModuleCard
-            type="game"
-            title="Sustainable City Builder"
-            desc="Design a city that balances resources."
-          />
-          <ModuleCard
-            type="quiz"
-            title="Water Warriors Quiz"
-            desc="Learn how to save and protect water."
-          />
+          <LearningModulesComponent/>
         </div>
       </section>
     </main>
