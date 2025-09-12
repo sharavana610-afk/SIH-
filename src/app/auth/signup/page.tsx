@@ -74,8 +74,8 @@ export default function SignUpPage() {
     saveUser({
       name,
       email,
-      stage,
-      schoolLevel: level,
+      stage: stage!,
+       schoolLevel: level,
       collegeCourse: course,
       xp: 1200,
       badges: ["Eco Beginner", "Tree Planter"],

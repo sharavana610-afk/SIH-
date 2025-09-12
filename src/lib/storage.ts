@@ -1,7 +1,7 @@
 // src/lib/storage.ts
 
 // 🔹 Define missing types
-export type EducationStage = "school" | "college" | "other";
+export type EducationStage = "school" | "college" | "teacher";
 export type SchoolLevel = "primary" | "secondary" | "higher";
 
 export type UserProfile = {
