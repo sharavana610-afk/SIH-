@@ -23,7 +23,7 @@ export default function Landing() {
                 <span className="block text-black">Learn Green,</span>
                 <span className="block text-black">Play Bold —</span>
                 <span className="block bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                 GreenSpark
+                 JeevanJadd
                    </span>
               </h1>
 
@@ -335,7 +335,7 @@ export default function Landing() {
             Ready to Spark the <span className="text-emerald-600">Green Revolution?</span>
           </h2>
           <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-            Join thousands of students already learning, playing, and making a difference with GreenSpark&apos;s interactive environmental education platform.
+            Join thousands of students already learning, playing, and making a difference with JeevaJadd&apos;s interactive environmental education platform.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

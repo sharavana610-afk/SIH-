@@ -104,7 +104,7 @@ export default function SignUpPage() {
               </svg>
             </div>
             <h1 className="text-4xl font-bold text-slate-900 mb-3">
-              Welcome to GreenSpark!
+              Welcome to JeevanJadd !
             </h1>
             <p className="text-lg text-slate-600 max-w-md mx-auto">
               Create your account and start your educational journey with us

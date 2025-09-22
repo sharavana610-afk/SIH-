@@ -28,7 +28,7 @@ export default function Navbar() {
             <Leaf className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
           </div>
           <span className="bg-gradient-to-r from-emerald-700 to-emerald-600 bg-clip-text text-transparent">
-            GreenSpark
+            JeevaJadd
           </span>
         </Link>
 
@@ -102,7 +102,7 @@ export default function Navbar() {
               <Leaf className="h-4 w-4 text-white" />
             </div>
             <span className="bg-gradient-to-r from-emerald-700 to-emerald-600 bg-clip-text text-transparent">
-              GreenSpark
+              JeevanJadd
             </span>
           </Link>
           
