@@ -335,7 +335,7 @@ export default function Landing() {
             Ready to Spark the <span className="text-emerald-600">Green Revolution?</span>
           </h2>
           <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-            Join thousands of students already learning, playing, and making a difference with JeevaJadd&apos;s interactive environmental education platform.
+            Join thousands of students already learning, playing, and making a difference with JeevanJadd&apos;s interactive environmental education platform.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
