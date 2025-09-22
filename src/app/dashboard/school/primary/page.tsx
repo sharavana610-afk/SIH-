@@ -126,9 +126,6 @@ export default function PrimaryDashboard() {
           {/* Learning Modules Section */}
           <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 border border-emerald-100 shadow-lg">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full flex items-center justify-center">
-                <BookOpen className="w-5 h-5 text-white" />
-              </div>
             </div>
             <LearningModulesComponent />
           </div>
